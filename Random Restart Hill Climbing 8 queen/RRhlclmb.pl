@@ -78,13 +78,3 @@ call1(0,0).
 call1(X,S):-X>0,X1 is X - 1,call1(X1,S1),rndm_number(N),S is S1*10 + N.
 rndm_number(N):-random_between(1, 8, N).
 
-
-
-/* Exercise:
-
-1. Change it to accomodate restarting with a randomly generated state.
-   [Note:"X is random(8)+1" - returns a random integer from 1 to 8 in X.]
-
-2. Based on the code above implement a Genetic Algorithm.
-
-*/
